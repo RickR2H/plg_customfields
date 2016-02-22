@@ -6,7 +6,7 @@ This plugin will add a tab with custom fields in the article manager.
 
 The custom fields attrubutes can be used in a template override for com_content -> article
 
-Add this to the top of the article override default.php (or othername.php for example)
+Add this to the top of the default.php in article override folder, or create for example a file in this folder called myoverride.php
 ```php
 <?php
 	// Added to extract the attributes from the article
