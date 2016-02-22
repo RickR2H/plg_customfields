@@ -12,7 +12,10 @@ Add this to the top of the article override default.php (or othername.php for ex
 	$attributes = json_decode($this->item->attribs);
 ?>
 ```
-Add the following somewhere in the article. For instance before <div itemprop="articleBody">
+Add the following somewhere in the article. For instance before
+```html
+<div itemprop="articleBody">
+```
 ```php
 	<!-- Custom Content Article -->
 	<?php
