@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2016 R2H B.V. (http://www.r2h.nl). All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="content" method="upgrade">
+	<name>plg_content_plugin_customfields</name>
+	<author>Rick Spaan</author>
+	<creationDate>February 2016</creationDate>
+	<copyright>Copyright (c) 2016 R2HB.V. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>rick@r2h.nl</authorEmail>
+	<authorUrl>http://www.r2h.nl</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		<p>Custom field plugin for com_content</p>
+	]]>
+	</description>
+
+	<files>
+        <folder>forms</folder>
+		<filename plugin="customfields">customfields.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_customfields.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_customfields.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

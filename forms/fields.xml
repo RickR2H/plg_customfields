@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="attribs" >
+        <fieldset name="customfields">
+            <field type="spacer" name="spacer1" label="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_SPACER1_LABEL" />
+			<field name="custom_title" type="text" label="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_TITLE_LABEL" description="" size="20" />
+			<field name="custom_faicon" type="text" label="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_FA_LABEL" description="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_FA_DESC" size="20" />
+			<field name="custom_lefttext" label ="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_LEFTTEXT_LABEL" description="" type="editor" width="300" filter="raw" />
+            <field type="spacer" name="spacer2" label="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_SPACER2_LABEL" />
+            <field name="custom_image" label="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_IMAGE_LABEL" type="media" directory="images" preview="true" />
+			<field name="custom_color" type="color" default="#eee" label="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_COLOR_LABEL"	description="" />
+			<field name="custom_righttext" label ="PLG_CONTENT_PLUGIN_CUSTOMFIELDS_RIGHTTEXT_LABEL" description="" type="editor" width="300" filter="raw" />
+        </fieldset>
+
+    </fields>
+</form>
+
