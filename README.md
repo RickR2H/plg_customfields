@@ -6,12 +6,14 @@ This plugin custom fields in the article manager
 The attrubutes can be loaded in a template override for com_content -> article
 
 Add this to the top of the article override default.php (or othername.php for example)
+```php
 <?php
 	// Added to extract the attributes from the article
 	$attributes = json_decode($this->item->attribs);
 ?>
-
+```
 Add the following somewhere in the article. For instance before <div itemprop="articleBody">
+```php
 	<!-- Custom Content Article -->
 	<?php
 		if (!empty($attributes->custom_color))
@@ -48,3 +50,4 @@ Add the following somewhere in the article. For instance before <div itemprop="a
 		</div>
 	<?php endif; ?>
 	<!-- \Custom Content Article -->
+```
