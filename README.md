@@ -1,9 +1,10 @@
 # plg_imguploader
 
-The plugin was created for the Joomla days 2016 in the Netherlands
-This plugin custom fields in the article manager
+The plugin was created for the Joomla days 2016 in the Netherlands.
 
-The attrubutes can be loaded in a template override for com_content -> article
+This plugin will add a tab with custom fields in the article manager.
+
+The custom fields attrubutes can be used in a template override for com_content -> article
 
 Add this to the top of the article override default.php (or othername.php for example)
 ```php
