@@ -13,20 +13,23 @@ Add this to the top of the article override default.php (or othername.php for ex
 	$attributes = json_decode($this->item->attribs);
 ?>
 ```
-Add the following somewhere in the article. For instance before
+Replace:
 ```html
 <div itemprop="articleBody">
+	<?php echo $this->item->text; ?>
+</div>
 ```
+with:
 ```php
 	<!-- Custom Content Article -->
 	<?php
 		if (!empty($attributes->custom_color))
 		{
-			$color_well = '<div class="well" style="background-color: ' . $attributes->custom_color . '">';
+			$color_well = 'class="well" style="background-color: ' . $attributes->custom_color . '"';
 		}
 		else
 		{
-			$color_well = '<div class="well">';
+			$color_well = 'class="well"';
 		}
 	?>
 	<?php if (!empty($attributes->custom_lefttext) && !empty($attributes->custom_righttext)) : ?>
@@ -40,10 +43,12 @@ Add the following somewhere in the article. For instance before
 					<?php echo $attributes->custom_title; ?>
 					</h3>
 				<?php endif; ?>
-				<?php echo $attributes->custom_lefttext; ?>
+				<div itemprop="articleBody">
+					<?php echo $this->item->text; ?>
+				</div>
 			</div>
 			<div class="span6">
-				<?php echo $color_well; ?>
+				<div <?php echo $color_well; ?>>
 					<?php if (!empty($attributes->custom_image)) : ?>
 						<img class="img-responsive" src="<?php echo JUri::root() . $attributes->custom_image; ?>">
 						<p>&nbsp;</p>
