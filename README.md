@@ -1,4 +1,4 @@
-# plg_imguploader
+# plg_customfields
 
 The plugin was created for the Joomla days 2016 in the Netherlands.
 
